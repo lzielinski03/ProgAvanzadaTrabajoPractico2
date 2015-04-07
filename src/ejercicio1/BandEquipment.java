@@ -88,11 +88,11 @@ public class BandEquipment {
         this.percussionList.add(drums);
     }
 
-    public List<PercussionInstrument> getPercussionList() {
+    List<PercussionInstrument> getPercussionList() {
         return percussionList;
     }
 
-    public List<StringedInstrument> getStringedList() {
+    List<StringedInstrument> getStringedList() {
         return stringedList;
     }
 }
