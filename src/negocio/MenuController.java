@@ -1,5 +1,6 @@
 package negocio;
 
+import clasesInternas.Stack;
 import ejercicio1.negocio.EjercicioUnoController;
 import modelo.Menu;
 import persistencia.MenuDB;
@@ -25,7 +26,16 @@ public class MenuController {
                     EjercicioUnoController.runEjercicio();
                     break;
                 case 2:
-                    io.print("Coming soon!!\n");
+                    io.println("Clases Internas");
+                    Stack st = new Stack();
+                    st.push("a");
+                    st.push("b");
+                    st.pop();
+                    st.push("c");
+                    st.push("d");
+                    st.push("e");
+                    st.show();
+                    io.println();
                     break;
                 case 3:
                     io.print("Adios!!!\t\t\t\t\tZielinski Leonardo");

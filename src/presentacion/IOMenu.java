@@ -11,21 +11,16 @@ import java.util.List;
 public class IOMenu extends IOManager{
 
     public int getSelectedMenu(int size) {
-        int n = getInt();
-        while(n < 1 || n > size) {
-            print("La opcion seleccionada no pertenece al rango del menu.");
-            n = getInt();
-        }
-        return n;
+        return getIntRange(1, size);
     }
 
     public void mostrar(Menu miMenu){
 
         List<ItemMenu> items = miMenu.getItems();
         for(int i = miMenu.getItems().size(); i > 0; i--){
-            System.out.println(items.get(i-1).getId() + " " + items.get(i-1).getDescripcion());
+            this.println(items.get(i-1).getId() + " " + items.get(i-1).getDescripcion());
         }
-
+        this.println();
     }
 
 

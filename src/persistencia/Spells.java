@@ -7,5 +7,5 @@ public enum Spells {
     MENU_PRINCIPAL,
     SUB_MENU,
     EJERCICIO_UNO,
-    EJERCICIO_UNO_SUB_MENU;
+    EJERCICIO_UNO_SUB_MENU
 }

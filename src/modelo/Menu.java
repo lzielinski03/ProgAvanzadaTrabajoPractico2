@@ -5,12 +5,12 @@ import java.util.List;
 
 public class Menu {
 
-    private List<ItemMenu> itemsMenu = new ArrayList<ItemMenu>();
+    private List<ItemMenu> itemsMenu = new ArrayList<>();
     private int size;
 
     public void addItem(ItemMenu item) {
         if(itemsMenu.isEmpty()){
-            itemsMenu = new ArrayList<ItemMenu>();
+            itemsMenu = new ArrayList<>();
         }
         this.itemsMenu.add(item);
         size = this.itemsMenu.size();

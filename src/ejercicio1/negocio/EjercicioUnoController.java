@@ -32,7 +32,7 @@ public class EjercicioUnoController {
                 break;
             case 3:
                 boolean finSubMenu = false;
-                while(finSubMenu == false) {
+                while(!finSubMenu) {
                     iom.mostrar(subMenu);
                     switch (iom.getSelectedMenu(subMenu.getSize())){
                         case 1:
