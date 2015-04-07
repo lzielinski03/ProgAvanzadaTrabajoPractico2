@@ -44,9 +44,7 @@ public class IOManager {
             this.print("Debe ingresar un entero.");
             scanner.nextLine();
         }
-        final int result = scanner.nextInt();
-        scanner.close();
-        return result;
+        return scanner.nextInt();
     }
 
     public int getIntRange(int min, int max) {
@@ -64,23 +62,17 @@ public class IOManager {
             this.print("Debe ingresar un numero.");
             scanner.nextLine();
         }
-        final double result = scanner.nextDouble();
-        scanner.close();
-        return result;
+        return scanner.nextDouble();
     }
 
     public String getString() {
         Scanner scanner = new Scanner(System.in);
-        final String result = scanner.nextLine();
-        scanner.close();
-        return result;
+        return scanner.nextLine();
     }
 
     public String getString(String message) {
         this.println(message);
         Scanner scanner = new Scanner(System.in);
-        final String result = scanner.nextLine();
-        scanner.close();
-        return result;
+        return scanner.nextLine();
     }
 }
